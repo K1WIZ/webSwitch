@@ -29,7 +29,6 @@ function kidson() {
 
 if ($_GET['tvon']) {
 tvon();
-
 } elseif ($_GET['tvoff']) {
 tvoff();
 } elseif ($_GET['kidsoff']) {
