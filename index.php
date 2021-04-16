@@ -11,29 +11,66 @@
                 background-color: black;
                 }
                 .on {
-                display: block;
-                width: 100%;
-                border: none;
-                background-color: #008CBA;
-                padding: 14px 28px;
-                font-weight: bold;
-                color: white;
-                font-size: 16px;
-                cursor: pointer;
+                margin-right: 10px;
+                width: 100px;
+                background: #008CBA;
+                border-bottom: #4863A0 3px solid;
+                border-left: #4863A0 1px solid;
+                border-right: #4863A0 1px solid;
+                border-radius: 6px;
                 text-align: center;
+                color: white;
+                padding: 10px;
+                float: left;
+                font-size: 16px;
+                font-weight: bold;
                 }
                 .off {
-                display: block;
-                width: 100%;
-                border: none;
-                background-color: #f44336;
-                padding: 14px 28px;
-                font-weight: bold;
-                color: white;
-                font-size: 16px;
-                cursor: pointer;
+                margin-right: 10px;
+                width: 100px;
+                background: #f44336;
+                border-bottom: #990012 3px solid;
+                border-left: #990012 1px solid;
+                border-right: #990012 1px solid;
+                border-radius: 6px;
                 text-align: center;
+                color: white;
+                padding: 10px;
+                float: left;
+                font-size: 16px;
+                font-weight: bold;
                 }
+                .on:hover {
+                opacity: 0.8;
+                }
+                .off:hover {
+                opacity: 0.8;
+                }
+                .on:active {
+                width: 100px;
+                background: #18B495;
+                border-bottom: #16a085 1px solid;
+                border-left: #16a085 1px solid;
+                border-right: #16a085 1px solid;
+                border-radius: 6px;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                margin-top: 3px;
+                float: left;
+                }
+                .off:active {
+                width: 100px;
+                background: #18B495;
+                border-bottom: #16a085 1px solid;
+                border-left: #16a085 1px solid;
+                border-right: #16a085 1px solid;
+                border-radius: 6px;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                margin-top: 3px;
+                float: left;              
         </style>
 </head>
 <body>
