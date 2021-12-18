@@ -79,11 +79,11 @@
         <table width='300' border='0' cellpadding='20'>
         <tr>
                 <td><button type="button" class="on" onclick="window.location.href='?tvon=true'">TV ON</button></td>
-                <td><button type="button" class="off" onclick="window.location.href='?tvoff=true'">TV OFF</button></td>
+                <td><button type="button" class="off" onclick="window.location.href='?tvon=false'">TV OFF</button></td>
         </tr>
         <tr>
                 <td><button type="button" class="on" onclick="window.location.href='?kidson=true'">KIDS ON</button></td>
-                <td><button type="button" class="off" onclick="window.location.href='?kidsoff=true'">KIDS OFF</button></td>
+                <td><button type="button" class="off" onclick="window.location.href='?kidson=false'">KIDS OFF</button></td>
         </tr>
         </table>
 
@@ -108,16 +108,34 @@ function kidson() {
 }
 
 // decision structure for simple API based on GET 
+foreach ($_GET as $key => $value) {
 
-if ($_GET['tvon']) {
-tvon();
-} elseif ($_GET['tvoff']) {
-tvoff();
-} elseif ($_GET['kidsoff']) {
-kidsoff();
-} elseif ($_GET['kidson']) {
-kidson();
+        switch ($key) {
+        case 'tvon' :
+                switch ($value) {
+                case 'true' :
+                        tvon();
+                        break;
+                case 'false' :
+                        tvoff();
+                        break;
+                }
+                break;
+        case 'kidson' :
+                switch ($value) {
+                case 'true' :
+                        kidson();
+                        break;
+                case 'false' :
+                        kidsoff();
+                        break;
+                }
+                break;
+        default :
+                break;
+        }
 }
+
 
 ?>
 
